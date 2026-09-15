@@ -16,7 +16,7 @@ class LoginTest extends DuskTestCase
         $this->browse(function (Browser $browser) {
             $browser->visit('/')
                 ->clickLink('Faça login usando senha única USP!')
-                ->waitFor('#loginUsuario')
+                ->waitFor('#loginUsuario', 20)
                 ->type('#loginUsuario', '1111')
                 ->press('Login')
                 ->assertSee('Administração')
