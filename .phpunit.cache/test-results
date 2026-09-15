@@ -1,1 +1,1 @@
-{"version":2,"defects":{"Tests\\Browser\\ExampleTest::test_basic_example":8,"Tests\\Browser\\IndexTest::test_example":7},"times":{"Tests\\Browser\\ExampleTest::test_basic_example":0.221,"Tests\\Browser\\IndexTest::test_example":1.793}}
+{"version":2,"defects":{"Tests\\Browser\\ExampleTest::test_basic_example":8,"Tests\\Browser\\IndexTest::test_example":8,"Tests\\Browser\\LoginTest::test_login":8},"times":{"Tests\\Browser\\ExampleTest::test_basic_example":0.221,"Tests\\Browser\\IndexTest::test_example":0.755,"Tests\\Browser\\LoginTest::test_login":4.774}}
