@@ -32,7 +32,7 @@ class UsuarioCrudTest extends DuskTestCase
                 ->press('Enviar');
             
             // Read
-            $user = User::latest()->first();
+            $user = User::where('username', $username)->firstOrFail();
             $browser->visit("/users/{$user->id}")
                 ->waitForText('Usuario Teste', 15)
                 ->assertSee('Usuario Teste');
