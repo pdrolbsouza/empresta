@@ -29,7 +29,9 @@ class UsuarioCrudTest extends DuskTestCase
                 ->type('name', 'Usuario Teste')
                 ->type('username', $username)
                 ->type('password', 'senha_teste')
-                ->press('Enviar');
+                ->press('Enviar')
+                ->waitForText('Usuario Teste', 15)
+                ->assertSee('Usuario Teste');
             
             // Read
             $user = User::where('username', $username)->firstOrFail();
