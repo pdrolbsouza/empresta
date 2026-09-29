@@ -42,6 +42,7 @@ class UsuarioCrudTest extends DuskTestCase
                 ->waitForText('Edição de Usuário', 15)
                 ->assertSee('Edição de Usuário')
                 ->type('name', 'Usuario Teste Editado')
+                ->type('password', 'senha_teste_atualizada')
                 ->press('Enviar')
                 ->waitForText('Usuario Teste Editado', 15)
                 ->assertSee('Usuario Teste Editado');
